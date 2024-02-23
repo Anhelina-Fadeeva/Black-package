@@ -1,0 +1,245 @@
+
+#app {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: 9;
+}
+
+#lifes {
+    position: absolute;
+    top: 5px;
+    left: 20px;
+}
+
+#lifes span {
+    display: block;
+    margin: 10px;
+    float: left;
+    width: 40px;
+    height: 40px;
+    background: url(images/life.png);
+    background-size: cover;
+}
+
+#game {
+    width: 100%;
+    height: 100%;   
+    position: absolute;
+    overflow: hidden;
+    z-index: 9;
+    background: url(images/126.jpg) no-repeat;
+    background-size: cover;  
+}
+
+#options {
+    float: right;
+    height: 40px;
+    margin: 10px;
+}
+#options div {
+    float: left;
+    cursor: pointer;
+}
+#options #score {
+    color: yellow;
+    font-size: 24px;
+    margin: 6px 40px;
+}
+#options #sound,
+#options #sound img {
+    height: 100%;
+}
+
+#paket {
+    height: 290px;
+    width: 290px;
+    position: absolute;
+    margin-top: 480px;
+    left: 500px;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    background: url(images/a.png);  
+}
+
+.golova {
+    position: absolute;
+    right: 20px;
+    z-index: 999999;
+}
+.golova.type-1 {
+    top: -120px;
+    left: 30px;
+    width: 150px;
+    height: 125px;
+    background: url("images/3.png") no-repeat;
+}
+.golova.type-2 {
+    top: -120px;
+    left: 430px;
+    top: calc(30% - 85px);
+    width: 180px;
+    height: 180px;
+    background: url("images/123456.png") no-repeat;
+}
+
+.golova.type-3 {
+    top: -120px;
+    left: 730px;
+    top: calc(30% - 85px);
+    width: 150px;
+    height: 150px;
+    background: url("images/ч.png") no-repeat;
+}
+.golova.type-4 {
+    top: -120px;
+    left: 1050px;
+    top: calc(30% - 85px);
+    width: 150px;
+    height: 150px;
+    background: url("images/8.png") no-repeat;
+}
+
+#start {
+    background: url("images/promo.gif") no-repeat;
+    width: 811px;
+    height: 456px;
+    border-radius: 0px;
+    text-align: center;
+    padding: 2px 20px;
+    margin: 60px auto;
+    font-family: arial black;
+    font-size: 24px;
+    margin-left: 200px;     
+    position: absolute;
+    background-size: cover;  
+    margin-right: auto; 
+}
+
+ #end {
+    background: url("images/zzz.jpg") no-repeat;
+    width: 100%;
+    height: 100%;
+    border-radius: 0px;
+    text-align: center;
+    padding: 2px 20px;
+    font-family: arial black;
+    font-size: 24px;
+    background-size: cover;
+
+}
+
+#start button {
+    padding: 20px 60px;
+    font-size: 15px;
+    font-family: arial black;
+    background: blue;
+    border-radius: 50px;
+    border: 4px solid #336184;
+    cursor: pointer;   
+    outline: none;
+    color: yellow;
+    text-transform: uppercase;
+    margin-top: 500px;
+    margin-right: 100px;
+}
+
+#end button {
+    top: 350px;
+    left: 40px;
+    padding: 20px 60px;
+    font-size: 15px;
+    font-family: arial black;
+    background: blue;
+    border-radius: 50px;
+    border: 4px solid #336184;
+    cursor: pointer;
+    margin: 120px;
+    outline: none;
+    color: yellow;
+    text-transform: uppercase;
+ }
+ .boom2 {
+    position: absolute;
+    right: 20px;
+    z-index: 999999;
+}
+ .boom2.type-1 {    
+    width: 300px;
+    height: 300px;
+   background: url(images/boom3.gif);
+}
+ 
+#start button:hover {
+background: #8a7868;
+}
+
+#bonus button  {
+    top: 350px;
+    left: 40px;
+    padding: 20px 60px;
+    font-size: 15px;
+    font-family: arial black;
+    background: blue;
+    border-radius: 50px;
+    border: 4px solid #336184;
+    cursor: pointer;
+    margin: 120px;
+    outline: none;
+    color: yellow;
+    text-transform: uppercase;
+ }
+ 
+#bonus {
+    background: url("images/most3.jpg") no-repeat;
+    width: 1360px;
+    height: 804px;
+    text-align: center;
+    position: fixed;
+    font-family: arial black;   
+    background-size: cover; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.tank {
+    position: absolute;
+    right: 20px;
+    z-index: 999999;
+}
+.tank.type-1 {
+    top: 300;
+    left: 300px;
+    width: 150px;
+    height: 150px;
+    background: url("images/770.png") no-repeat;
+}
+
+.boom {
+    position: absolute;
+    right: 20px;
+    z-index: 999999;
+}
+.boom.type-1 {    
+    width: 1200px;
+    height: 100px;
+   background: url(images/boom.gif);
+}
+
+.clearfix {
+    zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
